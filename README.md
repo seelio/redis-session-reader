@@ -17,11 +17,11 @@ var sid = RedisSessionReader.sessionredisSessionReader.unsignCookieSid(rawSid, s
 
 // Given a Hapi server, connect to redis:
 RedisSessionReader.connectHapiServerToRedis(server, cb);
-// ^^ cb returns (err, status)
+// ^^ cb should take the following params: (err, status). status is an object: {status: "some status"}.
 
 // Given a redis_node redis client object, 
 // get the userId of the user who owns the session:
 RedisSessionReader.getSessionIdFromRedis(sid, server.plugins['hapi-redis'].client, cb);
-// ^^ cb returns (err, userId)
+// ^^ cb should take the following params: (err, userId). userId is a string.
 
 ```
