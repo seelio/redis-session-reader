@@ -1,9 +1,9 @@
-var sessionStore = {};
+var RedisSessionReader = {};
 
 // Expose 3 interfaces: (see each module for details)
-sessionStore.connectHapiServerToRedis = require('./lib/connectHapiServerToRedis');
-sessionStore.unsignCookieSid = require('./lib/unsignCookieSid')
-sessionStore.getSessionIdFromRedis = require('./lib/getSessionIdFromRedis');
+RedisSessionReader.connectHapiServerToRedis = require('./lib/connectHapiServerToRedis');
+RedisSessionReader.unsignCookieSid = require('./lib/unsignCookieSid');
+RedisSessionReader.getSessionIdFromRedis = require('./lib/getSessionIdFromRedis');
 
-module.exports = seelioSessions;
+module.exports = RedisSessionReader;
 
