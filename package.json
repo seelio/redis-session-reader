@@ -9,7 +9,7 @@
   },
   "keywords": "express-session redis hapi",
   "author": "Brian Flaherty <bfla@umich.edu>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "connect-redis": "^2.5.1",
     "cookie-signature": "^1.0.6",
