@@ -13,7 +13,7 @@ RedisSessionReader = require('redis-session-reader');
 
 // Given a raw session id (signed) from the browser, 
 // decode it to match the value of the matching session id in the redis store.
-var sid = RedisSessionReader.sessionredisSessionReader.unsignCookieSid(rawSid, secret);
+var sid = RedisSessionReader.unsignCookieSid(rawSid, secret);
 
 // Given a Hapi server, connect to redis:
 RedisSessionReader.connectHapiServerToRedis(server, cb);
