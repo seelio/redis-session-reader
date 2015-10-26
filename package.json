@@ -15,13 +15,14 @@
     "cookie-signature": "^1.0.6",
     "express-session": "^1.11.3",
     "hapi": "^10.1.0",
-    "hapi-redis": "^6.0.0"
+    "hapi-redis": "^6.0.0",
+    "boom": "~2.10.0"
   },
   "devDependencies": {
     "tape": "^4.2.1"
   },
-  "repository" : { 
-    "type" : "git",
-    "url" : "https://github.com/seelio/redis-session-reader"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seelio/redis-session-reader"
   }
 }
