@@ -11,12 +11,10 @@
   "author": "Brian Flaherty <bfla@umich.edu>",
   "license": "MIT",
   "dependencies": {
-    "connect-redis": "^2.5.1",
+    "boom": "~2.10.0",
     "cookie-signature": "^1.0.6",
-    "express-session": "^1.11.3",
     "hapi": "^10.1.0",
-    "hapi-redis": "^6.0.0",
-    "boom": "~2.10.0"
+    "redis": "^2.2.5"
   },
   "devDependencies": {
     "tape": "^4.2.1"
