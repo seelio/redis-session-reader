@@ -22,7 +22,12 @@ var rawSignedSessionId = 's%3AK-5uqkQChDuf5b5dAytqfqm8.dvl08QCN1ydR5TT7uul9v0B3e
 var sid = RedisSessionReader.unsignCookieSid(rawSignedSessionId, sessionSecret);
 console.log('querying for sid: ', sid);
 
-RedisSessionReader.connectHapiServerToRedis(server, _doStuffAfterConnectingToRedis);
+redisOptions = {
+  host: 'localhost',
+  port: 6379
+};
+
+RedisSessionReader.connectHapiServerToRedis(server, sessionSecret, 'connect.sid.1.0', redisOptions, _doStuffAfterConnectingToRedis);
 
 function _doStuffAfterConnectingToRedis (err, status) {
   if (err) {console.log(err); return;}
