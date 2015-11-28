@@ -6,5 +6,3 @@ RedisSessionReader.unsignCookieSid = require('./lib/unsignCookieSid');
 RedisSessionReader.getSessionIdFromRedis = require('./lib/getSessionIdFromRedis');
 
 module.exports = RedisSessionReader;
-
-// just a test to test the Cloud 9 IDE editing integration with github
